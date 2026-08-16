@@ -8,12 +8,20 @@ title: Travlr Getaways Enhancement
 The artifact that was chosen is the Travlr Getaways single page application that was partially completed in the CS 465 course. This application is a travel package booking website. In it's initial form, the webpage uses static html files to populate its webpage and the goal of the CS 465 course was to populate the "travel" page using M.E.A.N. full stack development tools. I decided to include this in my ePortfolio because I believe finishing the application so that "Rooms", "Meals", "News", "Contact", and "About Us" tabs are populated using M.E.A.N. tools would be an appropriate demonstration of my competency in all five of the course outcomes. M.E.A.N. stands for MongoDB, Express.js, Angular, and Node.js. Using these tools in conjunction shows my ability to employ strategies for a collaborative environment (Outcome One). Since this is for a travel booking website I'll show my ability to design, develop, and deliver professional quality communications (Outcome Two). The need for the application to use MongoDB and possess the functionality for users to edit the contents of the website show how I can design and evaluate computing solutions that solve problems using algorithmic principles because the user information needs to be encrypted (Outcome Three). The three examples I just listed will also show my competency in Outcome 4 and Outcome 5. Because this is the only artifact I will be working on in this course, all course outcomes won't fully show my competency until the entire application is finished.
 
 ## Milestone One
-[original travlr]
+<a href="{{ '/original_travlr/original_travlr.zip' | relative_url }}">
+    Download the Original Travlr Getaways Application
+</a>
 # Code Review
-<video controls width="100%">
-    <source src="{{ '/travlr Code Review.mp4' | relative_url }}" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+<iframe
+    width="100%"
+    height="500"
+    src="https://www.youtube.com/embed/__C0SToT5H4"
+    title="Travlr Getaways Code Review"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+</iframe>
 
 ---
 ## Milestone Two
@@ -28,4 +36,6 @@ How my progress by milestone three enhancements related to the algorithms and da
  ## Final Enhancement
 I found the issue with the schema errors I had been dealing with previously. They were merely typos that stemed from me quickly adjusting the various files to compensate for three json objects for news instead of one. After that was done I started continuously testing and iterating the rest of the changes. Most of the changes from this point on dealt with giving a visualization to the information stored in the Mongo database so that the administrators could clearly see what they could edit. I also had to implement "Add" and "Update" buttons on each "card" that the information stored on. It was a lot of editting xml files. Finally I needed to implement the appropriate permissions so that the cards allowed the information to be editted only if a user with the appropriate permissions was logged in. 
 
-[final travlr folder here]
+<a href="{{ '/enhancement4/travlr.zip' | relative_url }}">
+    Download the Final Travlr Getaways Application
+</a>
