@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-header">{{ newsTip.code }}</div>
+    <div class="card-body">
+        <p class="card-text" [innerHTML]="newsTip.title"></p>
+    </div>
+    <div *ngIf="isLoggedIn()">
+            <button (click)="editNewsTips(newsTip)" class="btn btn-info">Edit News Tip</button>
+    </div>
+</div>

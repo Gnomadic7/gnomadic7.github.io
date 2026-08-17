@@ -1,0 +1,15 @@
+<div class="card">
+    <div class="card-header">{{ newsFeatured.title }}</div>
+    
+    <p>Image Filename: {{ newsFeatured.image }}</p>
+
+    <img src="assets/images/{{ newsFeatured.image }}" alt="news thumbnail" />
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">{{ newsFeatured.author }}</h6>
+        <p class="card-subtitle mt-3 mb-3 text-muted">{{ newsFeatured.pubDate }}</p>
+        <p class="card-text" [innerHTML]="newsFeatured.description"></p>
+        <div *ngIf="isLoggedIn()">
+            <button (click)="editNewsFeatured(newsFeatured)" class="btn btn-info">Edit News Featured</button>
+        </div>
+    </div>
+</div>

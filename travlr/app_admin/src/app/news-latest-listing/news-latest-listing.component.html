@@ -1,0 +1,8 @@
+<div *ngIf="isLoggedIn()">
+    <button (click)="addNewsLatest()" class="btn btn-info"> Add Latest News</button>
+</div>
+<div class="row">
+    <div *ngFor="let newsLatest of newsLatest" class="col-4">
+       <app-news-latest-card [newsLatest]="newsLatest" class="card-deck mt-2"></app-news-latest-card>
+    </div>
+</div>

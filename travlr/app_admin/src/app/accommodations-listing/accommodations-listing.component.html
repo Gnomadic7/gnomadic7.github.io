@@ -1,0 +1,8 @@
+<div *ngIf="isLoggedIn()">
+    <button (click)="addAccommodations()" class="btn btn-info"> Add Accommodations</button>
+</div>
+<div class="row">
+    <div *ngFor="let accommodation of accommodations" class="col-4">
+       <app-accommodations-card [accommodation]="accommodation" class="card-deck mt-2"></app-accommodations-card>
+    </div>
+</div>

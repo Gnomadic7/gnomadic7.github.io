@@ -1,0 +1,24 @@
+[
+    {
+        "code" : "F001",
+        "name" : "Seafood Special",
+        "title" : "Fried Salmon Special",
+        "image" : "seafoods.jpg",
+        "alt": "Img",
+        "description" : "I'm a product overview. Here you can write more information about your product. Buyers like to know ..."
+    } , {
+        "code" : "F002",
+        "name" : "Sumptuous Desserts",
+        "title" : "Choco Ice Cream Sandwich",
+        "image" : "desserts.jpg",
+        "alt": "Img",
+        "description" : "I'm a product overview. Here you can write more information about your product. Buyers like to know ..."
+    } , {
+        "code" : "F003",
+        "name" : "Buffet",
+        "title" : "Mixed Buffet",
+        "image" : "buffet.jpg",
+        "alt": "Img",
+        "description" : "I'm a product overview. Here you can write more information about your product. Buyers like to know ..."
+    }
+]

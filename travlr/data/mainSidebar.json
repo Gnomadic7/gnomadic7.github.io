@@ -1,0 +1,17 @@
+[
+    {
+        "link": "/rooms",
+        "image":"rooms.png",
+        "alt": "Img"
+    },
+    {
+        "link": "/travel",
+        "image": "dive-site.png",
+        "alt": "Img"
+    },
+    {
+        "link": "/meals",
+        "image": "food.png",
+        "alt": "Img"
+     }
+]

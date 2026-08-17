@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">{{ accommodation.name }}</div>
+    <img src="assets/images/{{ accommodation.image }}"
+        alt="accommodation thumbnail" class="card-img-top">
+    <div class="card-body">
+        <p class="card-subtitle mt-3 mb-3 text-muted">{{accommodation.rate}}</p>
+        <p class="card-text" [innerHTML]="accommodation.description">
+        </p>
+        <div *ngIf="isLoggedIn()">
+            <button (click)="editAccommodation(accommodation)" class="btn btn-info">Edit Accommodation</button>
+        </div>
+    </div>
+</div>

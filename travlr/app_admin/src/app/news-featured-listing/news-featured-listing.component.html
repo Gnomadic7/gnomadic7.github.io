@@ -1,0 +1,9 @@
+<!--<p>news-featured-listing works!</p>-->
+<div class="row">
+    <div *ngFor="let news of newsFeatured" class="col-4">
+        <app-news-featured-card
+            [newsFeatured]="news"
+            class="card-deck mt-2">
+        </app-news-featured-card>
+    </div>
+</div>

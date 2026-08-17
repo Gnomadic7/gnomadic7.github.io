@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>About - Travlr Getaways Web Template</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="background">
+		<div id="page">
+			{{> header}}
+			<div id="contents">
+				<div class="box">
+					<div>
+						<div class="body">
+							<h1>About</h1>
+							{{#each us}}
+							<h2>{{this.mainTitle}}</h2>
+							<p>
+								{{this.mainDescription}}
+							</p>
+							<hr>
+							<div class="ads">
+								<h2>{{this.crewsTitle}}</h2>
+								<p>
+									{{{this.crewsDescription}}}
+								</p>
+								<h2>{{this.amenitiesTitle}}</h2>
+								<p>
+									{{this.amenitiesDescription}}
+								</p>
+							</div>
+							<h2>{{this.communityTitle}}</h2>
+							<p>
+								{{{this.communityDescription}}}
+							</p>
+							<h2>{{this.templateTitle}}</h2>
+							<p>
+								{{{this.templateDescription}}}
+							</p>
+							{{/each}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{{> footer}}
+	</div>
+</body>
+</html>

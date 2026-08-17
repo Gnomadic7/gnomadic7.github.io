@@ -1,0 +1,9 @@
+<div class="card">
+    <div class="card-header">{{ newsLatest.code }}</div>
+    <div class="card-body">
+        <p class="card-text" [innerHTML]="newsLatest.title"></p>
+    </div>
+    <div *ngIf="isLoggedIn()">
+            <button (click)="editNewsLatest(newsLatest)" class="btn btn-info">Edit News Latest</button>
+    </div>
+</div>

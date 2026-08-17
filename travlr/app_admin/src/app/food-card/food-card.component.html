@@ -1,0 +1,22 @@
+<!-- <div class="card" style="width: 16rem;">
+    <div class="card-header">{{ food.name }}</div>
+    <img src="assets/images/{{ food.image }}"
+        alt="trip thumbanil" class="card-img-top" />
+    <div class="card-body">
+        <h6
+    -->
+<div class="card">
+    <div class="card-header">{{ food.name }}</div>
+    <img src="assets/images/{{ food.image }}"
+        alt="food thumbnail" class="card-img-top">
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">
+            {{ food.title }}
+        </h6>
+        <p class="card-text" [innerHTML]="food.description">
+        </p>
+        <div *ngIf="isLoggedIn()">
+            <button (click)="editFood(food)" class="btn btn-info">Edit Food</button>
+        </div>
+    </div>
+</div>
